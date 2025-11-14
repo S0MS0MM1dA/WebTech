@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.Product-Head{
+    text-align: center;
+    font-size: larger ;
+    width: 90%;
+    padding: 40px;
+}
+.container{
+    width: 90%;
+}
+.product-title{
+    font-size: large;
+    text-align: left;
+    
+}
+.products{
+    text-align: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.product-card {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    width: 30%;
+}
+
+.product-card {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    width: 30%;
+    flex-direction: column;
+}
+.product-img img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    text-align: center;
+}
