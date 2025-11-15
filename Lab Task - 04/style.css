@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    border: 1px;
+}
+.nav-bar{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 25px;
+    margin-bottom: 55px;
+}
+.logo{
+    text-decoration: none;
+}
+.logo span{
+    color: green;
+    font-size: 20px;
+}
+.nav-bar ul{
+    display: flex;
+    align-items: center;
+
+}
+.nav-bar ul li{
+    text-decoration: none;
+    margin-right: 20px;
+    display: flex;
+}
+
+.just-login{
+    padding: 2px;
+    display: flex;
+    position: absolute;
+    background-color: white;
+    margin-top: -11px;
+    margin-left: 165px;
+}
+.login-box{
+    margin: 20px 120px;
+    border: solid;
+    border-width: 0.5px;
+    padding: 15px 39px;
+    max-width: 400px;
+}
+.user-info{
+    border-bottom: solid;
+    border-width: 0.5px;
+    width: 64%;
+    padding: 10px;
+    align-items: center;
+}
+.user-footer table{
+    margin-top: 10px;
+}
+.user-btn{
+    margin-top: 10px;
+    display: flex;
+}
+.submit-btn{
+    background-color: whitesmoke;
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 4px;
+}
+.fotgot-btn{
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.footer-part{
+    margin: auto;
+}
+.footer-part p{
+    text-align: center;
+}
+
+.left-container {width: 50%;}
+
+.left-container h3 {
+    padding: 5px;
+    padding-right: 30px;
+    margin-bottom: 10px;
+    font-size: large;
+    border-bottom: solid 0.5px;
+    width: 70%;
+}
+
+.left-container ul {
+    margin: auto;
+    padding: 0 30px;
+}
+
+.left-container ul li{
+    padding: 3px 0px;
+}
+.right-container {width: 50%;}
+
+.right-container h3 {
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: large;
+}
+.dashboard{
+    display: flex;
+    justify-content: space-between;
+}
+tr {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+a.forgot-btn {
+    margin: 4px 15px;
+}
+input {
+    border: solid 0.5px #6e6e6e;
+    padding: 6px;
+    border-radius: 20px;
+    margin: auto;
+}
+p#username_error {
+    width: 170px;
+    text-align: center;
+    margin: auto 5px;
+}
+p#pass_error {
+    width: 170px;
+    text-align: center;
+    margin: auto 5px;
+}
+label{
+    font-size: 20px;
+    color: rgb(0 0 0 / 75%);
+    padding-right: 7px;
+}

@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <script>
+        function handleSubmit() {
+            const NameValue = document.getElementById("name").value;
+            const emailValue = document.getElementById("email").value;
+            const passwordValue = document.getElementById("password").value;
+            if (!NameValue || NameValue == "") {
+                const ErrorElement = document.getElementById("nameErr");
+                ErrorElement.innerHTML = "Name is required";
+            } else {
+                const ErrorElement = document.getElementById("nameErr");
+                ErrorElement.innerHTML = "";
+            }
+            if (!emailValue || emailValue == "") {
+                const ErrorElement = document.getElementById("emailErr");
+                ErrorElement.innerHTML = "Email is required";
+            } else {
+                const ErrorElement = document.getElementById("emailErr");
+                ErrorElement.innerHTML = "";
+            }
+            if (!passwordValue || passwordValue == "") {
+                const ErrorElement = document.getElementById("passwordErr");
+                ErrorElement.innerHTML = "Password is required";
+            } else {
+                const ErrorElement = document.getElementById("passwordErr");
+                ErrorElement.innerHTML = "";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h2>
+        Hi, we are from web tech section U
+    </h2>
+    <input type="text" placeholder="Enter your name" id="name" />
+    <p id="nameErr" style="color:red"></p>
+    <input type="text" placeholder="Enter your Email" id="email" />
+    <p id="emailErr" style="color:red"></p>
+    <input type="password" placeholder="Enter your password" id="password" />
+    <p id="passwordErr" style="color:red"></p>
+    <button onclick="handleSubmit()">Submit</button>
+</body>
+
+</html>
