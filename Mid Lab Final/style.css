@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    background-color: aliceblue;
+    justify-content: space-between;
+    display: flex;
+    padding: 10px 20px;
+}
+.nav_logo{
+    color: blueviolet;
+    width: 90%;
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    margin: auto;
+    padding: 10px 20px;
+    border-bottom: 1px solid black;
+    width: fit-content;
+}
+.menu{
+    display: flex;
+}
+.menu ul{
+    display: flex;
+    text-align: center;
+}
+.menu ul li{
+    display: flex;
+    text-decoration: none;
+}
+.menu a{
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+}
+section.Main_body {
+    width: 30%;
+    margin: 30px auto;
+    border: 1px solid #e7e5e5;
+    border-radius: 10px;
+    padding: 29px 10px;
+    background: white;
+}
+
+h3 {
+    text-align: center;
+    font-size: 40px;
+    margin: auto;
+    border-bottom: 1px solid #c1c1c1;
+    width: fit-content;
+    font-weight: bold;
+    color: blueviolet;
+}
+table {
+    margin: auto;
+    padding: 10 5px;
+}
+.errMsg{
+    color: red;
+    font-size: 15px;
+}
+input{
+    border: solid 0.5px rgb(199, 197, 197);
+    border-radius: 5px;
+    padding: 8px 12px;
+    width: 90%;
+}
+table {
+    padding: 15px 5px;
+}
+input.radioBtn {
+    width: auto;
+    margin: 4px 8px;
+}
+button.btn {
+    width: 100%;
+    padding: 8px 30px;
+    border: none;
+    border-radius: 15px;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top:5px;
+}
+button.btn:hover {
+    background-color: white;
+    color: blueviolet;
+    border: 1px solid;
+}
+#event-div{
+    border: 1px solid aqua;
+    padding: 10px;
+    margin: auto;
+    width: 50%;
+    display: none;
+}
+#event-div h4{
+    text-align: center;
+    margin-bottom: 5px;
+}
+#event-div:hover {
+    border: 1px solid aqua;
+    padding: 10px;
+    margin: auto;
+    width: 50%;
+}

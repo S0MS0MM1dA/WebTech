@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <script>
+      function handleDeptValidation() {}
+
+      let count = 0;
+      function handleCountTotalReview() {
+        const department = document.getElementById("department").value;
+        const email = document.getElementById("email").value;
+        let valid = false;
+        if (department == "" || !department) {
+          const deptErr = document.getElementById("deptErr");
+          deptErr.innerHTML = "Department cannot be empty";
+        } else {
+          const deptErr = document.getElementById("deptErr");
+          deptErr.innerHTML = "";
+          console.log("Department entered: " + department);
+          console.log("Length of department: " + department.length);
+          valid = true;
+
+          if (department.length < 5) {
+            const deptErr = document.getElementById("deptErr");
+            deptErr.innerHTML =
+              "Department name must be at least 5 characters long";
+            valid = false;
+          }
+          if (department.length > 10 && department !== "") {
+            const deptErr = document.getElementById("deptErr");
+            deptErr.innerHTML = "Department name cannot exceed 10 characters";
+            valid = false;
+          }
+        }
+        if (email == "" || !email) {
+          const emailErr = document.getElementById("emailErr");
+          emailErr.innerHTML = "Email cannot be empty";
+          valid = false;
+        } else {
+          const emailErr = document.getElementById("emailErr");
+          emailErr.innerHTML = "";
+          valid = true;
+
+          console.log("Email entered: " + email);
+          const emailPattern =
+            /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+          if (!emailPattern.test(email)) {
+            const emailErr = document.getElementById("emailErr");
+            emailErr.innerHTML = "Please enter a valid email address";
+            valid = false;
+          }
+        }
+        if (valid) {
+          count++;
+        }
+      }
+      function showTotal() {
+        const total = document.getElementById("totalReviews");
+        total.innerHTML = "Total Reviews: " + count;
+      }
+      function hideTotal() {
+        const total = document.getElementById("totalReviews");
+        total.innerHTML = "";
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Hi, this is Web technology Section U</h1>
+
+    <label>Department</label>
+    <input type="text" id="department" placeholder="Enter Your department" />
+    <p id="deptErr" style="color: red"></p>
+
+    <label>Email</label>
+    <input type="email" id="email" placeholder="Enter Your email" />
+    <p id="emailErr" style="color: red"></p>
+
+    <button onclick="handleDeptValidation()">Submit</button>
+
+    <button onclick="handleCountTotalReview()">
+      Click Here to increment total count
+    </button>
+    <button onclick="showTotal()">Click here to see total count</button>
+    <button onclick="hideTotal()">Click here to hide total count</button>
+    <p id="totalReviews"></p>
+  </body>
+</html>

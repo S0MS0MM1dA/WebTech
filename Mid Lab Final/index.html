@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Tech Connect</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+            <div class="nav_logo">Global Tech Connect</div>
+    
+    </header>
+        <section class="Main_body">
+
+            <h3>Registration</h3>
+
+            <table>
+                
+                <tr><td><label for="">Fullname <span style="color: red;">*</span> </label></td></tr>
+                <tr><td><input id="full_name" type="text" placeholder="Enter Full Name" /></td></tr>
+                <tr><td><p class="errMsg" id="nameErr"></p></td><tr>
+
+                <tr><td><label for="">Email <span style="color: red;">*</span> </label></td></tr>
+                <tr><td><input id="user_email" type="email" placeholder="Enter Email" /></td></tr>
+                <tr><td><p class="errMsg" id="emailErr"></p></td></tr>
+
+                <tr><td><label for="">Company/Institution </label></td></tr>
+                <tr><td><input type="text" id="company"></textarea></td></tr>
+                <tr><td><p class="errMsg" id="companyErr"></p></td></tr>
+
+                <tr><td><label for="">Attendance<span style="color: red;">*</span> </label></td></tr>
+                <tr><td><input class="radioBtn" type="radio" id="att_visual" name="attendance" value="visual">Visual</td></tr>
+                <tr><td><input class="radioBtn" type="radio" id="att_inPerson" name="attendance" value="inPerson">In Person</td></tr>
+                <tr><td><p class="errMsg" id="attendance" style="color: red"></p></td></tr>
+
+                <tr>
+                    <td>
+                        <button onclick="handleSubmit()" class="btn" id="submit_btn">Register</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="toggleButton()" class="btn" id="event_btn">Show Event Analytics</button>
+                    </td>
+                </tr>
+            </table>
+            <div id="event-div">
+                <h4>Event Statistics</h4>
+                <p>Total Registrants: <span id="total_count">0</span></p>
+                <p>Virtual: <span id="virtual_count">0</span></p>
+                <p>In-Person: <span id="inperson_count">0</span></p>
+            </div>
+        </section>
+</body>
+<script src="script.js"></script>
+
+</html>
