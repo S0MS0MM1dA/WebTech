@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header-container {
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    border-bottom: 0.2px solid #c9c9c9;
+    align-items: center;
+}
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+nav.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   /* FIX */
+    padding: 10px 0;
+}
+
+.nav-logo-div {
+    width: 20%;
+}
+
+.nav-menu-div {
+    width: 60%;
+}
+
+ul.nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.nav-menu li a {
+    text-decoration: none;
+    padding: 10px 17px;
+    display: inline-block;
+    font-weight: 500;
+    color: #000000;
+}
+
+.nav-btn-div {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-btn-div ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-btn-div .btn{
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 0.5px solid #498aff;
+    border-radius: 13px;
+    margin: 0px 5px;
+}
+section#welcome-section {
+    width: 100%;
+    background-color: #006affc9;
+}
+
+.welcome-container {
+    padding: 60px 10px;
+}
+
+.headeline-div {
+    align-items: center;
+    margin: 20px auto 33px auto;
+}
+.headeline-div h2 {
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    padding: 12px 0px;
+    margin: 10px auto 0px auto;
+}
+
+.headeline-div p {
+    text-align: center;
+    color: wheat;
+    font-size: 27px;
+    font-weight: 100;
+    padding: 5px 0px;
+    margin: 0px auto 20px auto;
+}
+
+.headeline-search-div {
+    background-color: white;
+    border: 1px solid white;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-around;
+    margin: 15px auto;
+    border-radius: 19px;
+    width: 60%;
+    align-items: center;
+    gap: 40px;
+}
+.headeline-search-div input {
+    padding: 5px 0px;
+    border: none;
+    border-bottom: 1px solid #e5e5e7;
+}
+a.search-btn.btn {
+    text-decoration: none;
+    padding: 10px 30px;
+    border: 1px solid #498aff;
+    border-radius: 9px;
+    color: white;
+    background-color: #498aff;
+    font-size: medium;
+}
+a.logo-img {
+    color: #498aff;
+    background-color: white;
+    padding: 10px 0 10px 15px;
+    border: 1px solid #498aff;
+    border-radius: 14px;
+    text-decoration: none;
+}
+
+a.logo-img span {
+    color: white;
+    background-color: #498aff;
+    padding: 10px 9px;
+    border: 1px solid #498aff;
+    border-radius: 14px;
+    margin-left: 2px;
+}
